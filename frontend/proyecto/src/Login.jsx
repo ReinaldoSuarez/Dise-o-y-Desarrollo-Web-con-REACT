@@ -16,31 +16,36 @@ export function Login() {
             console.log(res);
             
             if (res.status === 200) {
-                alert(' Ingrsando a nuestro sistema')
+                alert(' INGRESANDO AL SISTEMA SAP')
                 navigate('/productos'); // Redirige a la página de productos
             }
         })
         .catch(err => {
             console.log(err);
-            alert('Usuario no registrado')
+            alert('USUARIO NO REGISTRADO')
             
         });
 };
 
 
     return(
-        <main>
+        <mainlogin>
             <form onSubmit={handleSubmit}>
-                <div>
-                    <h2> Inicio de sesion</h2>
+                <div className="inside">
+                    
+                    <h1>SISTEMA AUTOMATICO DE PARQUEADEROS</h1>
+                    
+                    <h2>INICIAR SESIÓN</h2>
                     <input type="email" placeholder="email" onChange ={e => setEmail(e.target.value)}/>
                     <input type="password" placeholder="contraseña" onChange ={e => setPassword(e.target.value)}/>
                 </div>
                 <button>INGRESAR</button>
+
+                <p>¿No tienes cuenta? <a href="/register">Regístrate aquí</a></p>
             
             </form>
-            <p>¿No tienes cuenta? <a href="/register">Regístrate aquí</a></p>
-        </main>
+            
+        </mainlogin>
     )
     
 }

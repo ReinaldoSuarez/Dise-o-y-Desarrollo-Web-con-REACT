@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import './login.css'
 
 const Register = () => {
   
@@ -30,12 +31,13 @@ const Register = () => {
   }
 
   return (
-    <main>
-    <div>
-      <h2>Registro</h2>
+    <mainlogin>
+    <div className='inside'>
+      
       <form onSubmit={handleSubmit}>
         {/* Campo para ingresar el correo electrónico */}
         <div>
+        <h2>REGISTRO</h2>
           <label>Correo Electrónico:</label>
           <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required
           />
@@ -54,7 +56,7 @@ const Register = () => {
       </form>
       
     </div>
-    </main>
+    </mainlogin>
   );
 };
 
