@@ -41,7 +41,7 @@ export function Login() {
                 </div>
                 <button>INGRESAR</button>
 
-                <p>¿No tienes cuenta? <a href="/register">Regístrate aquí</a></p>
+                <p>¿No tienes cuenta? <a href="/Register">Regístrate aquí</a></p>
             
             </form>
             

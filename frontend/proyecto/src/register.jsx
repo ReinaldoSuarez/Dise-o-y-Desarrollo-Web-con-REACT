@@ -16,7 +16,7 @@ const Register = () => {
 
     try {
       // Realizar la solicitud POST al backend con los datos del usuario
-      const response = await axios.post('http://localhost:8081/register', { email, password });
+      const response = await axios.post('http://localhost:8081/Register', { email, password });
       setMessage(response.data.message); // Mostrar mensaje de éxito o error
       alert("Registro exitoso!");
       navigate('/login', { replace: true });

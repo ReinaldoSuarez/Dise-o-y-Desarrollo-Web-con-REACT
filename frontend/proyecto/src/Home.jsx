@@ -3,6 +3,8 @@ import './Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.jsx';
 
+
+
 function Home() {
     return (
         <div className="carousel">
@@ -11,10 +13,12 @@ function Home() {
 
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src="src/assets/slide01.jpg" className="d-block w-100" alt="Imagen 1" />
+                        {/* <img src="src/assets/slide01.jpg" className="d-block w-100" alt="Imagen 1" /> */}
+                        <div className="banner01"></div>
                     </div>
                     <div className="carousel-item">
-                        <img src="src/assets/slide02.jpg" className="d-block w-100" alt="Imagen 2" />
+                        {/* <img src="src/assets/slide02.jpg" className="d-block w-100" alt="Imagen 2" /> */}
+                        <div className="banner02"></div>
                     </div>
 
                 </div>
