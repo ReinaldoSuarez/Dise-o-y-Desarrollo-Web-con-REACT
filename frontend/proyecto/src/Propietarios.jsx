@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './propietarios.css';
+import './Propietarios.css';
 
 
 function Propietarios (){
