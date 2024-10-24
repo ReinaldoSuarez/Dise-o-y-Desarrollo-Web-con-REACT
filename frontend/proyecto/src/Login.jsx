@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 import './login.css'
 
@@ -41,7 +41,7 @@ export function Login() {
                 </div>
                 <button>INGRESAR</button>
 
-                <p>¿No tienes cuenta? <a href="/Register">Regístrate aquí</a></p>
+                <p>¿No tienes cuenta? <Link to="/Register">Regístrate aquí</Link></p>
             
             </form>
             
